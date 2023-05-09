@@ -1,0 +1,26 @@
+/** Estos son Pseudoselectores **/ 
+
+:root{                         /*Custom properties*/
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --fuente-principal: 3.8rem;
+    }
+
+html{
+    font-size: 62.5%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+font-size: 16px;
+font-family: 'Josefin Sans', sans-serif;;
+} 
+
+.titulo{
+    font-size: 3rem;
+    color :var(--secundario)
+}
+

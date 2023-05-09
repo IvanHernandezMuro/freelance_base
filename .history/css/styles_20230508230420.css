@@ -1,0 +1,22 @@
+/** Estos son Pseudoselectores **/ 
+
+:root{                         /*Custom properties*/
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --fuente-principal: 3.8rem;
+    }
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+font-size: 16px;
+} 
+
+.titulo{
+    font-size: 3rem;
+}

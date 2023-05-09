@@ -41,7 +41,6 @@ body {
 }
 .navegacion-principal a:hover {
 	background-color: var(--primary);
-	padding: 0.5rem;
 }
 
 .contenedor {

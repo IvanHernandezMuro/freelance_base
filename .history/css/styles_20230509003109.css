@@ -32,20 +32,17 @@ body {
 	padding: 1rem;
 	display: flex;
 	justify-content: space-around;
+	background-color: var(--primary);
 }
 .navegacion-principal a {
 	text-decoration: none;
+	color: var(--black) !important;
 	font-size: 2.5rem;
 	font-weight: 700;
 	color: var(--white);
-}
-.navegacion-principal a:hover {
-	background-color: var(--primary);
-	padding: 0.5rem;
 }
 
 .contenedor {
 }
 .nav-bg {
-	background-color: var(--black);
 }
