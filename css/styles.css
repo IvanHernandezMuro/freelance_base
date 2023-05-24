@@ -1,5 +1,4 @@
-/** Estos son Pseudoselectores **/
-
+/* Estos son Pseudoselectores */
 :root {
 	/*Custom properties*/
 	--white: #fff;
@@ -10,14 +9,14 @@
 	--fuentes-principal: 3.8rem;
 }
 
+/*Estandarización de fuentes*/
 html {
 	font-size: 62.5%;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body {
-	font-size: 16px;
-	font-family: "Josefin Sans", sans-serif;
+	font-size: 16px; /*1rem = 10px*/
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .titulo {
@@ -32,6 +31,7 @@ body {
 	padding: 1rem;
 	display: flex;
 	justify-content: space-around;
+	background-color: var(--secondary);
 }
 .navegacion-principal a {
 	text-decoration: none;
