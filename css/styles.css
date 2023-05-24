@@ -12,24 +12,40 @@
 
 html {
 	font-size: 62.5%;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
 	font-size: 16px;
-	font-family: "Josefin Sans", sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .titulo {
-	font-size: 3rem;
-	color: var(--secondary);
+	text-align: center;
+	font-size: 3.8rem;
+	color: var(--black);
 }
 .titulo span {
-	font-size: 1rem;
+	font-size: 2rem;
+}
+
+.contenedor {
+	max-width: 120rem; /*120rem = 1200px*/
+	margin: auto;
+}
+.nav-bg {
+	background-color: var(--secondary);
+}
+.navegacion-principal {
+	display: flex;
+	justify-content: space-between;
+}
+.navegacion-principal a {
+	color: var(--white);
+	text-decoration: none;
 }
 
 .navegacion-principal {
-	padding: 1rem;
 	display: flex;
 	justify-content: space-around;
 }
@@ -38,14 +54,9 @@ body {
 	font-size: 2.5rem;
 	font-weight: 700;
 	color: var(--white);
+	padding: 1rem;
 }
 .navegacion-principal a:hover {
-	background-color: var(--primary);
-	padding: 0.5rem;
-}
-
-.contenedor {
-}
-.nav-bg {
 	background-color: var(--black);
+	background-color: var(--primary);
 }
