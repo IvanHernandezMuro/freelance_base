@@ -9,7 +9,7 @@
 	--fuentes-principal: 3.8rem;
 }
 
-/*Estandarización de fuentes*/
+/*Estandarización de fuentes html y body*/
 html {
 	font-size: 62.5%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,7 +24,7 @@ body {
 	color: var(--secondary);
 }
 .titulo span {
-	font-size: 1rem;
+	font-size: 2rem;
 }
 
 .navegacion-principal {
