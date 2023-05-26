@@ -31,14 +31,14 @@ body {
 
 .contenedor {
 	max-width: 120rem; /*120rem = 1200px*/
-	margin: auto;
+	margin: 0 auto;
 }
 .nav-bg {
 	background-color: var(--secondary);
 }
 .navegacion-principal {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 }
 .navegacion-principal a {
 	color: var(--white);
@@ -50,13 +50,22 @@ body {
 	justify-content: space-around;
 }
 .navegacion-principal a {
-	text-decoration: none;
-	font-size: 2.5rem;
-	font-weight: 700;
+	display: block;
 	color: var(--white);
+	text-decoration: none;
+	font-size: 3rem;
+	font-weight: bold;
 	padding: 1rem;
 }
 .navegacion-principal a:hover {
 	background-color: var(--black);
 	background-color: var(--primary);
+}
+
+/* Media Query para barra de navegación*/
+@media (min-width: 768px) {
+	.navegacion-principal {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
