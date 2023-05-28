@@ -13,6 +13,12 @@
 html {
 	font-size: 62.5%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
 body {
@@ -59,4 +65,22 @@ body {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+}
+
+/* inicio de hero y Ubicación */
+
+.hero {
+	background-image: url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* código temporal*/
+	height: 45rem;
+	/* padding: 20px; */
+	position: relative;
+}
+.contenido-hero {
+	position: absolute;
+	background-color: rgba(248, 224, 2, 0.219);
+	height: 100%;
+	width: 100%;
 }
