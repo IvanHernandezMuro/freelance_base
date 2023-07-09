@@ -15,6 +15,7 @@ html {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -29,39 +30,70 @@ body {
 h1 {
 	font-size: 3.8rem;
 }
+
 h2 {
 	font-size: 2.8rem;
 }
+
 h3 {
 	font-size: 1.8rem;
 }
+
 h1,
 h2,
 h3 {
 	text-align: center;
 }
+
 .titulo span {
 	font-size: 2rem;
 }
+
 /* Globales */
 .contenedor {
-	max-width: 120rem; /*120rem = 1200px*/
+	max-width: 120rem;
+	/*120rem = 1200px*/
 	margin: 0 auto;
 }
-.boton{
-	background-color:var(--secondary);
-	color:var(--white);
+
+.navegacion-principal a:hover {
+	font-weight: lighter;
+}
+
+/*Utilidad*/
+.w-sm-100 {
+	width: 100%;
+}
+
+
+.boton {
+	background-color: var(--secondary);
+	color: var(--white);
 	padding: 1rem 3rem;
-	margin-top:2rem;
+	margin-top: 2rem;
 	text-decoration: none;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	font-weight: bold;
 	border-radius: 0.5rem;
 	text-align: center;
 	width: 90%;
+	border: none;
 }
+
+.boton:hover {
+	cursor: pointer;
+}
+
+.flex {
+	display: flex;
+}
+
+.alinear-derecha {
+	justify-content: flex-end;
+}
+
 @media (min-width: 768px) {
-	.boton{
+	.boton {
 		width: auto;
 	}
 }
@@ -70,10 +102,12 @@ h3 {
 .nav-bg {
 	background-color: var(--secondary);
 }
+
 .navegacion-principal {
 	display: flex;
 	flex-direction: column;
 }
+
 .navegacion-principal a {
 	display: block;
 	color: var(--white);
@@ -82,6 +116,7 @@ h3 {
 	font-weight: bold;
 	padding: 1rem;
 }
+
 .navegacion-principal a:hover {
 	background-color: var(--black);
 	background-color: var(--primary);
@@ -107,6 +142,7 @@ h3 {
 	/* padding: 20px; */
 	position: relative;
 }
+
 .contenido-hero {
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -127,5 +163,120 @@ h3 {
 
 .ubicacion {
 	display: flex;
-	align-items:flex-end;
+	align-items: flex-end;
+}
+
+/*servicios*/
+.sombra {
+	-webkit-box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.74);
+	-moz-box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.74);
+	box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.74);
+	background-color: var(--blanco);
+	padding: 2rem;
+}
+
+@media (min-width: 768px) {
+	.servicios {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 2rem;
+	}
+}
+
+.servicio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.servicio .iconos {
+	height: 10rem;
+	width: 10rem;
+	background-color: rgb(243, 148, 6);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.servicio h3 {
+	color: var(--secondary);
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.servicio p {
+	line-height: 2rem;
+}
+
+.formulario {
+	background-color: var(--gris);
+	width: min(80rem, 100%);
+	margin: 0 auto;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+/* .formulario fieldset {
+	border: none;
+} */
+
+.formulario legend {
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 2rem;
+	color: var(--primary);
+}
+
+.contenedor-campos {}
+
+.campo {
+	margin-bottom: 2rem;
+}
+
+.campo label {
+	display: block;
+	color: var(--white);
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.campo .input-text {
+	width: 100%;
+	border: none;
+	padding: 1.2rem;
+	border-radius: 0.5rem;
+}
+
+.campo textarea {
+	height: 15rem;
+}
+
+@media (min-width: 768px) {
+	.contenedor-campos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto;
+		column-gap: 1.5rem;
+	}
+}
+
+/*Nos da la pauta para seleccionar el hijo de cierta clase*/
+
+.campo:nth-child(3) {
+	grid-column: 1/3;
+	/*aquí especifica que va ocupar el espacio de la columna 1 a la columna 3*/
+}
+
+.campo:nth-child(4) {
+	grid-column: 1/3;
+}
+
+.footer {
+	text-align: center;
+	font-size: larger;
+	font-weight: bold;
 }
