@@ -52,7 +52,7 @@
                     </p>
                 </div>
 
-                <a href="#" class="boton">Contactar</a>
+                <a href="#formulario" class="boton">Contactar</a>
             </div>
 
         </section><!--Contenido principal-->
@@ -137,7 +137,7 @@
             </div>
 
             <!-- Contacto -->
-            <section>
+            <section id="formulario">
                 <h2>Contacto</h2>
                 <form class="formulario" action="">
                     <!-- Información Personal -->
@@ -151,25 +151,26 @@
 
 
 
-                                <input class="input-text" type="text" id="name" placeholder="Nombre Completo"
-                                    required />
+                                <input class="input-text" type="text" id="name" placeholder="Juan Peérez" required />
                             </div>
                             <div class="campo">
                                 <label for="telefono">Teléfono:
                                 </label>
-                                <input class="input-text" type="tel" id="telefono" placeholder="Teléfono" required />
+                                <input class="input-text" type="tel" id="telefono" placeholder="+52 (000) 000-0000"
+                                    required />
                             </div>
 
                             <div class="campo">
                                 <label for="email">Correo:
                                 </label>
-                                <input class="input-text" type="email" id="email" placeholder="Mail" required />
+                                <input class="input-text" type="email" id="email" placeholder="correo@mail.com"
+                                    required />
                             </div>
 
                             <div class="campo">
                                 <label for="text">Mensaje:
                                 </label>
-                                <textarea class="input-text" id="text"></textarea>
+                                <textarea class="input-text" id="text" placeholder="Ingrese sus comentarios"></textarea>
                             </div>
                         </div>
 
@@ -179,12 +180,17 @@
                             </button>
                         </div>
                     </fieldset>
+                    <br>
+                    <div class="bot-ini">
+                        <a href="#" class="boton">🏠</a>
+                    </div>
+
                     <!-- <input type="submit" value="Enviar" class="boton boton-verde"> -->
                 </form>
             </section>
         </main>
         <footer class="footer">
-            <p>Todos los derechos reservados,&copy; Iván Hernández 2023</p>
+            <p>Todos los derechos reservados,&copy;Iván Hernández 2023</p>
         </footer>
     </body>
 
