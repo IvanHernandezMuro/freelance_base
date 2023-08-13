@@ -2,12 +2,14 @@
 
 :root {
 	/*Custom properties*/
-	--white: #fff;
-	--black: #212121;
-	--primary: #ffc107;
-	--secondary: #0097a7;
-	--gris: #757575;
+	--white: #f7f1e3;
+	--black: #2c2c54;
+	--primary: #ffda79;
+	--secondary: #34ace0;
+	--gris: #f7f1e3;
+	--red: #ff5252;
 	--fuentes-principal: 3.8rem;
+
 }
 
 html {
@@ -33,6 +35,7 @@ h1 {
 
 h2 {
 	font-size: 2.8rem;
+	color: var(--white);
 }
 
 h3 {
@@ -43,6 +46,15 @@ h1,
 h2,
 h3 {
 	text-align: center;
+}
+
+p {
+	color: var(--white);
+}
+
+.header,
+.titulo {
+	color: var(--white);
 }
 
 .titulo span {
@@ -83,6 +95,7 @@ h3 {
 
 .boton:hover {
 	cursor: pointer;
+	background-color: var(--primary);
 }
 
 /*Utilidad*/
@@ -179,7 +192,7 @@ h3 {
 	-webkit-box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.74);
 	-moz-box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.74);
 	box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.74);
-	background-color: var(--blanco);
+	background-color: var(--black);
 	padding: 2rem;
 }
 
@@ -195,12 +208,13 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 }
 
 .servicio .iconos {
 	height: 10rem;
 	width: 10rem;
-	background-color: rgb(243, 148, 6);
+	background-color: var(--primary);
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
