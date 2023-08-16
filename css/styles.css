@@ -31,11 +31,12 @@ body {
 
 h1 {
 	font-size: 3.8rem;
+	color: var(--white);
 }
 
 h2 {
 	font-size: 2.8rem;
-	color: var(--white);
+	color: var(--red);
 }
 
 h3 {
@@ -67,6 +68,13 @@ p {
 	/*120rem = 1200px*/
 	margin: 0 auto;
 }
+
+
+
+
+
+
+
 
 .navegacion-principal a:hover {
 	font-weight: lighter;
@@ -120,7 +128,13 @@ p {
 
 .nav-bg {
 	background-color: var(--black);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
 }
+
 
 .navegacion-principal {
 	display: flex;
@@ -139,8 +153,9 @@ p {
 }
 
 .navegacion-principal a:hover {
-	background-color: var(--black);
-	/* background-color: var(--primary); */
+	background-color: var(--secondary);
+	border-radius: 1rem;
+
 }
 
 /* Media Query para barra de navegación*/
@@ -149,6 +164,7 @@ p {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
 }
 
 /* inicio de hero y Ubicación */
