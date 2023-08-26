@@ -22,5 +22,6 @@
 		"Cancún",
 		"navegacion",
 		"Pseudoselectores"
-	]
+	],
+	"liveServer.settings.port": 5502
 }

@@ -97,7 +97,7 @@ p {
 	font-weight: bold;
 	border-radius: 0.5rem;
 	text-align: center;
-	width: 100%;
+	width: 40%;
 	border: none;
 }
 
@@ -164,8 +164,15 @@ p {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		display: none;
+	}
 
 }
+
 
 /* inicio de hero y Ubicación */
 
@@ -317,6 +324,11 @@ p {
 	text-align: center;
 	font-size: larger;
 	font-weight: bold;
+
+}
+
+.footer p {
+	color: var(--black);
 }
 
 .bot-ini {
